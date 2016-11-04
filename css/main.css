@@ -237,6 +237,53 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+.down-arrow a {
+    color: #fff; }
+
+
+                                @-webkit-keyframes floating-arrow {
+                                    from {
+                                        -webkit-transform: translate(-50%, 0);
+                                        transform: translate(-50%, 0); }
+                                    65% {
+                                        -webkit-transform: translate(-50%, 15px);
+                                        transform: translate(-50%, 15px); }
+                                    to {
+                                        -webkit-transform: translate(-50%, 0);
+                                        transform: translate(-50%, 0); } }
+
+                                @keyframes floating-arrow {
+                                    from {
+                                        -webkit-transform: translate(-50%, 0);
+                                        transform: translate(-50%, 0); }
+                                    65% {
+                                        -webkit-transform: translate(-50%, 15px);
+                                        transform: translate(-50%, 15px); }
+                                    to {
+                                        -webkit-transform: translate(-50%, 0);
+                                        transform: translate(-50%, 0); } }
+
+.floating-arrow {
+    -webkit-animation-name: floating-arrow;
+    animation-name: floating-arrow;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+
+.down-arrow {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+
 #slitSlider .carousel-caption {
 	padding: 0;
     display: table;
